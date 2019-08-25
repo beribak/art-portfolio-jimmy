@@ -27,7 +27,7 @@ class ImagesController < ApplicationController
   def update
     @image.update(image_strong_params)
     if @image.save
-      redirect_to image_path(@image)
+      redirect_to images_path
     else
       render :edit
     end
