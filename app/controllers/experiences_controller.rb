@@ -27,7 +27,7 @@ class ExperiencesController < ApplicationController
   def update
     @experience.update(experience_strong_params)
     if @experience.save
-      redirect_to experience_path(@experience)
+      redirect_to experiences_path
     else
       render :edit
     end
@@ -41,7 +41,7 @@ class ExperiencesController < ApplicationController
   private
 
   def experience_strong_params
-    params.require(:experience).permit(:photo, :title, :description)
+    params.require(:experience).permit(:start_date, :end_date, :location, :position, :firm, :show)
   end
 
   def set_experience
