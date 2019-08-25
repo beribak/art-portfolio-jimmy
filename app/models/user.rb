@@ -7,4 +7,8 @@ class User < ApplicationRecord
   has_many :experiences
   has_many :images
   has_many :infos
+
+  def admin?
+    admin
+  end
 end
