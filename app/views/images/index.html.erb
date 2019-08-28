@@ -1,0 +1,6 @@
+<h1>images</h1>
+<div>
+  <% @images.each do |image| %>
+  <div style="display: inline-block;"><%= image_tag image.photo, style: "object-fit: cover; height: 100px; width: 100px;", class: "" %></div>
+  <% end %>
+</div>
