@@ -1,6 +1,13 @@
 <h1>images</h1>
-<div>
-  <% @images.each do |image| %>
-  <div style="display: inline-block;"><%= image_tag image.photo, style: "object-fit: cover; height: 100px; width: 100px;", class: "" %></div>
-  <% end %>
+<div class="container">
+  <div class="row">
+    <% @images.each do |image| %>
+      <div class="col-3 mb-2">
+        <div class="card">
+          <%= image_tag image.photo, style: "object-fit: cover; height: 17vw;", class: "card-img-top" %>
+          <h4 class="p-2">title</h4>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
