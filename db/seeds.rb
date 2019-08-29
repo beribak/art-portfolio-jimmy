@@ -1,7 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+infos = []
+infos << "Jimmy Cortés is a professional Hair and Make-Up Designer/Artist. After 20 years working in New York on Broadway and the Met Opera (and five more in regional opera), he fell in love with Barcelona, where he now lives."
+infos << "A first-generation Cuban-American, he was born and raised in Little Havana, Miami’s Cuban enclave, and grew up speaking Spanish and English. In fact, he attended the first bilingual school in the US - Coral Way Elementary. After graduating from Miami High School, Jimmy left his home town (and his Cuban bubble) to study Costume Design, before transferring to Wigs & Make-Up, at North Carolina School of the Arts. It was there - surrounded by so many non-Cubans for the first time - that he fully came to appreciate and celebrate his latin heritage."
