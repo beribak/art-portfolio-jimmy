@@ -1,36 +1,37 @@
-<div class="banner">
-  <!-- <h2>Portfolio for Jimmy</h2> -->
-  <div class="container">
-    <img src="http://nebula.wsimg.com/e974ce0da59fe2687f4b3ad5bd2752fb?AccessKeyId=7CF5232BAEE59A11F643&disposition=0&alloworigin=1" alt="">
-    <img src="http://nebula.wsimg.com/3e9887557b5619176f920612d7343209?AccessKeyId=7CF5232BAEE59A11F643&disposition=0&alloworigin=1" alt="">
+<div class="d-flex">
+  <div class="p-5 flex-grow-1">
+    <!-- <h2>Portfolio for Jimmy</h2> -->
+    <div class="">
+      <img src="http://nebula.wsimg.com/e974ce0da59fe2687f4b3ad5bd2752fb?AccessKeyId=7CF5232BAEE59A11F643&disposition=0&alloworigin=1" alt="" class="profile-picture">
+    </div>
+    <h3 class="">Jimmy Cortes</h3>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <% @images.each do |image| %>
-      <div class="col-3 mb-2">
-        <div class="card" data-toggle="modal" data-target="#exampleModal">
-          <%= image_tag image.photo, style: "object-fit: cover; height: 17vw;", class: "card-img-top" %>
-          <h4 class="p-2">title</h4>
-        </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <%= image_tag image.photo, style: "object-fit: cover; height: 17vw;", class: "" %>
-              </div>
-
-            </div>
+  <div class="container bg-primary flex-item">
+    <div class="row">
+      <% @images.each do |image| %>
+        <div class="col-3 mb-2">
+          <div class="card" data-toggle="modal" data-target="#exampleModal">
+            <%= image_tag image.photo, style: "object-fit: cover; height: 17vw;", class: "card-img-top" %>
+            <h4 class="p-2">title</h4>
           </div>
+          <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <%#= image_tag image.photo, style: "object-fit: cover; height: 17vw;", class: "" %>
+                </div>
+
+              </div>
+            </div>
+          </div> -->
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
-
