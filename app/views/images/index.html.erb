@@ -1,19 +1,19 @@
 <div class="d-flex">
-  <div class="p-5 flex-grow-1 profile-info">
+  <div class="text-center p-5 flex-grow-1 profile-info">
     <!-- <h2>Portfolio for Jimmy</h2> -->
-    <div class="">
+    <div class="m-4">
       <img src="http://nebula.wsimg.com/e974ce0da59fe2687f4b3ad5bd2752fb?AccessKeyId=7CF5232BAEE59A11F643&disposition=0&alloworigin=1" alt="" class="profile-picture">
     </div>
-    <h3 class="">Jimmy Cortes</h3>
-    <p>Make up artist</p>
-    <div class="btn btn-outline-success btn-block">Email</div>
+    <h2 class="heading">Jimmy Cortes</h3>
+    <h4 class="sub_heading" >Make up artist</h4>
+    <div class="mb-4 btn btn-success btn-block">Email</div>
     <div class="">
-      <i class="fab fa-facebook" style="font-size: 50px;" ></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-snapchat"></i>
+      <a href="#" class="links text-danger" ><i class="fab fa-facebook" ></i></a>
+      <a href="#" class="links text-success"><i class="fab fa-instagram" ></i></a>
+      <a href="#" class="links text-warning"><i class="fab fa-snapchat "></i></a>
     </div>
   </div>
-  <div class="container bg-primary flex-item">
+  <div class="container flex-item">
     <div class="row">
       <% @images.each do |image| %>
         <div class="col-3 mb-2">
