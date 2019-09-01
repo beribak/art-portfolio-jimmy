@@ -7,13 +7,15 @@
   position: sticky;
   top: 0;
   height: 100vh;
-  background-color: rgb(220, 220, 220);
+  width: 15vw;
+  // background-color: rgb(220, 220, 220);
 }
 
 .links {
-  font-size: 60px;
+  font-size: 40px;
   margin-right: 5%;
   opacity: 0.8;
+  color: black;
   text-decoration: none;
 }
 
