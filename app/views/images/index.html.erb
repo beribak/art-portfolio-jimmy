@@ -1,5 +1,5 @@
 <div class="d-flex">
-  <div class="text-center p-4 flex-grow-1 profile-info">
+  <div class="text-center px-4 pt-4 flex-grow-1 profile-info">
     <!-- <h2>Portfolio for Jimmy</h2> -->
     <div class="mb-4">
       <img src="http://nebula.wsimg.com/e974ce0da59fe2687f4b3ad5bd2752fb?AccessKeyId=7CF5232BAEE59A11F643&disposition=0&alloworigin=1" alt="" class="profile-picture">
@@ -17,13 +17,14 @@
       <a href="#" class="links"><i class="fab fa-snapchat "></i></a>
     </div>
   </div>
-  <div class="container flex-item">
+  <div class="container flex-item mt-4">
     <div class="row">
       <% @images.each do |image| %>
         <div class="col-4 mb-2">
-          <div class="border border" data-toggle="modal" data-target="#exampleModal">
+          <div class="mb-3" style="width: 20vw;">
+          <!-- <div class="" data-toggle="modal" data-target="#exampleModal"> -->
             <%= image_tag image.photo, style: "object-fit: cover; width: 20vw;", class: "" %>
-            <h6 class="p-2 text-center">lorem ipsum</h6>
+            <h6 class="p-2 text-center border-bottom border-secondary mt-1">lorem ipsum liquid praesentium mollitia</h6>
           </div>
           <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
