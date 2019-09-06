@@ -21,9 +21,9 @@
     <div class="row">
       <% @images.each do |image| %>
         <div class="col-3 mb-2">
-          <div class="mb-3" style="width: 20vw;" >
+          <div class="mb-1" style="width: 20vw;" >
           <!-- <div class="" data-toggle="modal" data-target="#exampleModal"> -->
-            <%= image_tag image.photo, style: "object-fit: cover; width: 17vw; height: 40vh;", class: "" %>
+            <%= image_tag image.photo, class: "image" %>
           </div>
           <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
