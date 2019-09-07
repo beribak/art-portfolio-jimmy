@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_08_25_125952) do
     t.string "position"
     t.string "firm"
     t.string "show"
+    t.string "type"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

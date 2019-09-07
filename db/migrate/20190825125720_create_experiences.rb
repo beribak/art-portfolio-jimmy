@@ -7,6 +7,7 @@ class CreateExperiences < ActiveRecord::Migration[5.2]
       t.string :position
       t.string :firm
       t.string :show
+      t.string :type
       t.references :user, foreign_key: true
 
       t.timestamps
