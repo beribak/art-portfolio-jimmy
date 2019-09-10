@@ -2,34 +2,28 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 50px; /* Location of the box */
-  padding-bottom: 50px;
-  left: 15%;
-  top: 5%;
-  width: 75%; /* Full width */
-  height: 85%; /* Full height */
+  padding-top: 2%; /* Location of the box */
+  // left: 30%;
+  // top: 2%;
+  width: 100%; /* Full width */
+  max-height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
-
-.image {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.image:hover {opacity: 0.7;}
 
 .modal-content {
   margin: auto;
   display: block;
-  width: 60%;
-  max-width: 500px;
+  width: 40%;
+  height: 96%;
+  object-fit: cover;
+  border: 10px solid white;
 }
 
 .close {
   position: absolute;
+  z-index: 2;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
