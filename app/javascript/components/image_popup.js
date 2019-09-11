@@ -1,5 +1,4 @@
-//= require rails-ujs
-//= require_tree .
+
 const imagePopUp = () => {
   // Get the modal
   var modal = document.getElementById("myModal");
@@ -24,4 +23,4 @@ const imagePopUp = () => {
   }
 }
 
-imagePopUp();
+export { imagePopUp };
