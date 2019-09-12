@@ -21,9 +21,8 @@
     <div class="row">
       <% @images.each do |image| %>
         <div class="col-3 mb-2">
-          <div class="mb-1" style="width: 20vw;" >
-            <%= image_tag image.photo, class: "image" %>
-            <%= image.title %>
+          <div class="mb-1" >
+            <%= image_tag image.photo, class: "image"%>
           </div>
         </div>
       <% end %>
