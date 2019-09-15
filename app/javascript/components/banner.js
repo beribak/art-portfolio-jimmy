@@ -10,4 +10,4 @@ const loadDynamicBannerText = () => {
   });
 }
 loadDynamicBannerText();
-export { loadDynamicBannerText };
+// export { loadDynamicBannerText };

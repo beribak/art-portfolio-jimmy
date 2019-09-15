@@ -1,5 +1,5 @@
-//= require rails-ujs
-//= require_tree .
+// = require rails-ujs
+// = require_tree .
 // const imagePopUp = () => {
 //   // Get the modal
 //   var modal = document.getElementById("myModal");
