@@ -1,11 +1,11 @@
 
 const imagePopUp = () => {
   // Get the modal
-  var modal = document.getElementById("myModal");
+  const modal = document.getElementById("myModal");
   // alert("hgkgkjgkgkjhgh");
   // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.querySelectorAll(".image");
-  var modalImg = document.getElementById("img01");
+  const img = document.querySelectorAll(".image");
+  const modalImg = document.getElementById("img01");
 
   img.forEach(function(element){
     element.onclick = function(){
@@ -22,5 +22,5 @@ const imagePopUp = () => {
     modal.style.display = "none";
   }
 }
-
-export { imagePopUp };
+imagePopUp();
+// export { imagePopUp };

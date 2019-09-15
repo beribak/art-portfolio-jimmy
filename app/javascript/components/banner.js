@@ -9,5 +9,5 @@ const loadDynamicBannerText = () => {
     loop: true
   });
 }
-
+loadDynamicBannerText();
 export { loadDynamicBannerText };
