@@ -9,12 +9,12 @@ const loadDynamicBannerText = () => {
     loop: true
   });
 }
+export { loadDynamicBannerText };
+// loadDynamicBannerText();
 
-loadDynamicBannerText();
 // const imagePopUp = () => {
 //   // Get the modal
 //   var modal = document.getElementById("myModal");
-//   // alert("hgkgkjgkgkjhgh");
 //   // Get the image and insert it inside the modal - use its "alt" text as a caption
 //   var img = document.querySelectorAll(".image");
 //   var modalImg = document.getElementById("img01");
@@ -34,6 +34,6 @@ loadDynamicBannerText();
 //     modal.style.display = "none";
 //   }
 // }
+
 // imagePopUp();
-// export { loadDynamicBannerText };
 // alert("hgkgkjgkgkjhgh");

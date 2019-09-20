@@ -24,6 +24,6 @@ const imagePopUp = () => {
     modal.style.display = "none";
   }
 }
-imagePopUp();
+// imagePopUp();
 // alert("hgkgkjgkgkjhgh");
-// export { imagePopUp };
+export { imagePopUp };
