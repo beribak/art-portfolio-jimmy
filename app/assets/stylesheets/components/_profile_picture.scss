@@ -4,12 +4,17 @@
   object-fit: cover;
 }
 
+.container {
+  // background-color: #1fab89;
+}
+
 .profile-info {
   position: sticky;
   top: 0;
   height: 100vh;
   width: 15vw;
-  // background-color: rgb(220, 220, 220);
+  // background-color: #ff6363;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .links {
