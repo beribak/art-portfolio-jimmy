@@ -9,6 +9,8 @@
     <h5><%= link_to "About", infos_path, class: "" %></h5>
     <h5><%= link_to "Experiences", experiences_path, class: "" %></h5>
     <h5><%= link_to "Email", infos_path, class: "" %></h5>
+    <%= link_to "Log out", destroy_user_session_path, method: :delete%>
+    <%= link_to "Login", new_user_session_path%>
     <hr>
     <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dicta    laboriosam, cum, ullam aliquid praesentium mollitia.
     </p>
@@ -24,6 +26,14 @@
           <div class="mb-1" >
             <%= image_tag image.photo, class: "image"%>
             <p class="image-text" style=""><%= image.description %></p>
+            <% if user_signed_in? %>
+              <%= link_to image_path(image), method: :delete, data: {confirm: 'Are you sure?'}, class: 'text-danger ' do %>
+                <div class="d-flex justify-space-between">
+                  <i class="fas fa-trash-alt"></i>
+                  <p class="ml-1"> Remove </p>
+                </div>
+              <% end %>
+            <% end %>
           </div>
         </div>
       <% end %>
