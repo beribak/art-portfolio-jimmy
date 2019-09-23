@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3 bg-secondary text-white p-3 my-3">
+      <%= simple_form_for(@image) do |f| %>
+        <div class="form-group">
+          <%= f.input :description, class: 'form-control' %>
+          <%#= f.input :title, class: 'form-control' %>
+        </div>
+        <div class="text-center">
+          <%= f.submit class: 'btn button text-white' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
