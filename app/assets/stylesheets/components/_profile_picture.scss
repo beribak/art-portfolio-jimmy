@@ -4,12 +4,13 @@
   object-fit: cover;
 }
 
-.container {
-  // background-color: #1fab89;
+.flex-container {
+  display: flex;
 }
 
 .profile-info {
   position: sticky;
+  flex-grow: 1;
   top: 0;
   height: 100vh;
   width: 15vw;
