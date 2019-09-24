@@ -1,18 +1,18 @@
 <div class="flex-container">
   <div class="text-center px-4 pt-4 profile-info">
     <!-- <h2>Portfolio for Jimmy</h2> -->
-    <div class="mb-4">
+    <div class="mb-2">
       <img src="http://nebula.wsimg.com/e974ce0da59fe2687f4b3ad5bd2752fb?AccessKeyId=7CF5232BAEE59A11F643&disposition=0&alloworigin=1" alt="" class="profile-picture">
     </div>
-    <h2 class="heading">Jimmy Cortes</h3>
-    <h4 class="sub_heading" >Make up artist</h6>
-    <h5><%= link_to "About", infos_path, class: "" %></h5>
-    <h5><%= link_to "Experiences", experiences_path, class: "" %></h5>
-    <h5><%= link_to "Email", infos_path, class: "" %></h5>
+    <h3 class="heading">Jimmy Cortes</h3>
+    <h5 class="sub_heading" >Make up artist</h5>
+    <h6><%= link_to "About", infos_path, class: "" %></h6>
+    <h6><%= link_to "Experiences", experiences_path, class: "" %></h6>
+    <h6><%= link_to "Email", infos_path, class: "" %></h6>
     <%= link_to "Log out", destroy_user_session_path, method: :delete%>
     <%= link_to "Login", new_user_session_path%>
     <hr>
-    <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dicta    laboriosam, cum, ullam aliquid praesentium mollitia.
+    <p class="mb-2 small-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dicta    laboriosam, cum, ullam aliquid praesentium mollitia.
     </p>
     <div class="">
       <a href="https://www.instagram.com/jimmycortes_/" target="_blank" class="links"><i class="fab fa-instagram" ></i></a>
@@ -56,7 +56,7 @@
   <!-- Modal Content (The Image) -->
   <div id="image-container">
     <img class="modal-content" id="img01">
-    <h5 class="text-white text-center" id="image_description"></h5>
+    <h6 class="text-white text-center" id="image_description"></h6>
   </div>
   <!-- Modal Caption (Image Text) -->
   <div id="caption"></div>
