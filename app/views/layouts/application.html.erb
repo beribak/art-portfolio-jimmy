@@ -11,11 +11,11 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% if params[:controller] == "infos" || params[:controller] == "experiences" %>
+    <%# if params[:controller] == "infos" || params[:controller] == "experiences" %>
         <!-- <%#= render 'shared/transparent_navbar' %> -->
-        <%= render 'shared/navbar' %>
+        <%#= render 'shared/navbar' %>
 
-    <% end %>
+    <%# end %>
     <%= render 'shared/flashes' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
