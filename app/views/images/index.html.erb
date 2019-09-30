@@ -9,17 +9,18 @@
     <h6><%= link_to "About", infos_path, class: "" %></h6>
     <h6><%= link_to "Experiences", experiences_path, class: "" %></h6>
     <h6><%= link_to "Email", infos_path, class: "" %></h6>
-    <%= link_to "Log out", destroy_user_session_path, method: :delete%>
-    <%= link_to "Login", new_user_session_path%>
+    <% if user_signed_in? %>
+      <%= link_to "Log out", destroy_user_session_path, method: :delete%>
+    <% end %>
     <hr>
-    <p class="mb-2 small-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dicta    laboriosam, cum, ullam aliquid praesentium mollitia.
+    <p class="mb-3 small-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dicta    laboriosam, cum, ullam aliquid praesentium mollitia.
     </p>
     <div class="">
       <a href="https://www.instagram.com/jimmycortes_/" target="_blank" class="links"><i class="fab fa-instagram" ></i></a>
       <a href="https://www.linkedin.com/in/jimmy-cort%C3%A9s-772b826b/" target="_blank" class="links"><i class="fab fa-linkedin "></i></a>
     </div>
   </div>
-  <div class="container mt-4">
+  <div class="container mt-2">
     <div class="row">
       <% @images.each do |image| %>
         <div class="col-3 mb-2">
@@ -27,18 +28,20 @@
             <%= image_tag image.photo, class: "image"%>
             <p class="image-text" style=""><%= image.description %></p>
             <% if user_signed_in? %>
-              <%= link_to image_path(image), method: :delete, data: {confirm: 'Are you sure?'}, class: 'text-danger ' do %>
-                <div class="d-flex justify-space-between">
-                  <i class="fas fa-trash-alt"></i>
-                  <p class="ml-1"> Remove </p>
-                </div>
-              <% end %>
-              <%= link_to edit_image_path(image), class: 'text-secondary mr-3' do %>
-                <div class="d-flex justify-space-between">
-                  <i class="fas fa-edit"></i>
-                  <p class="ml-1"> Edit </p>
+              <div class="d-flex">
+                <%= link_to image_path(image), method: :delete, data: {confirm: 'Are you sure?'}, class: 'text-danger mr-3 mt-1' do %>
+                  <div class="d-flex justify-space-between">
+                    <i class="fas fa-trash-alt"></i>
+                    <p class="ml-1"> Remove </p>
                   </div>
-              <% end %>
+                <% end %>
+                <%= link_to edit_image_path(image), class: 'text-secondary mr-2 mt-1' do %>
+                  <div class="d-flex justify-space-between">
+                    <i class="fas fa-edit"></i>
+                    <p class="ml-1"> Edit </p>
+                    </div>
+                <% end %>
+              </div>
             <% end %>
           </div>
         </div>
