@@ -1,10 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-6 offset-3 bg-secondary text-white p-3 my-3">
-      <%= simple_form_for(@image) do |f| %>
+      <%= simple_form_for(@experience) do |f| %>
         <div class="form-group">
-          <%= f.input :title, class: '' %>
-          <%= f.input :description, class: '' %>
+          <%= f.input :show, class: '' %>
+          <%= f.input :firm, class: '' %>
+          <%= f.input :location, class: '' %>
+          <%= f.input :position, class: '' %>
         </div>
         <div class="text-center">
           <%= f.submit class: 'btn btn-primary button text-white' %>
