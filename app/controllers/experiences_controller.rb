@@ -3,7 +3,7 @@ class ExperiencesController < ApplicationController
   before_action :set_experience, only: [:edit, :update, :destroy]
 
   def index
-    @experiences = Experience.all
+    @experiences = Experience.order('created_at ASC')
   end
 
   def new

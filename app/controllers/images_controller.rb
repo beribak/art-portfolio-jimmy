@@ -3,7 +3,7 @@ class ImagesController < ApplicationController
   before_action :set_image, only: [:edit, :update, :destroy]
 
   def index
-    @images = Image.all
+    @images = Image.order('created_at ASC')
   end
 
   def new
