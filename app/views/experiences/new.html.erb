@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3 bg-secondary text-white p-3 my-3">
+      <%= simple_form_for(@experience) do |f| %>
+        <div class="form-group">
+          <%= f.input :show, class: '' %>
+          <%= f.input :firm, class: '' %>
+          <%= f.input :location, class: '' %>
+          <%= f.input :position, class: '' %>
+          <%= f.input :start_date, class: '' %>
+        </div>
+        <div class="text-center">
+          <%= f.submit class: 'btn btn-primary button text-white' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
