@@ -22,9 +22,9 @@ end
 Experience.create!(start_date: Date.new(2018), end_date: Date.new(2019), location: "Barcelona, Spain", position: "Co-Founder/Producer/Character Designer", firm: "Artspace & Online Gallery", show: "Atelier Cafe BCN", user: jimmy)
 Experience.create!(start_date: Date.new(2009), end_date: Date.new(2017), location: "New York, USA", position: "Principal Make-up Artist", firm: "Lincoln Center for the Performing Arts", show: "Metropolitan Opera", user: jimmy)
 Experience.create!(start_date: Date.new(2009), end_date: Date.new(2017), location: "New York, USA", position: "Principal HD Make-up Artist", firm: "Lincoln Center for the Performing Arts", show: "The Met: Live in HD", user: jimmy)
-Experience.create!(start_date: Date.new(2016), location: "Berlin, Germany", position: "Special Guest/MAC Directors of Make-up Artistry", show: "Mac Global Trend Presentation", user: jimmy)
-Experience.create!(start_date: Date.new(2014), location: "New York, USA", position: "Principal Make-up Artist", firm: "Opening Ceremony's \"100% Lost Cotton\"", show: "New York Fashion Week", user: jimmy)
-Experience.create!(start_date: Date.new(2014), location: "New York, USA", position: "Make-Up Artist Day Player", firm: "Silvercup Studio, Brooklyn", show: "Forever TV Show (ABC/Warner Bros)", user: jimmy)
+Experience.create!(start_date: Date.new(2016), end_date: Date.new(2016), location: "Berlin, Germany", position: "Special Guest/MAC Directors of Make-up Artistry", show: "Mac Global Trend Presentation", user: jimmy)
+Experience.create!(start_date: Date.new(2014), end_date: Date.new(2016), location: "New York, USA", position: "Principal Make-up Artist", firm: "Opening Ceremony's \"100% Lost Cotton\"", show: "New York Fashion Week", user: jimmy)
+Experience.create!(start_date: Date.new(2014), end_date: Date.new(2016), location: "New York, USA", position: "Make-Up Artist Day Player", firm: "Silvercup Studio, Brooklyn", show: "Forever TV Show (ABC/Warner Bros)", user: jimmy)
 Experience.create!(start_date: Date.new(2013), end_date: Date.new(2015), location: "New York, USA", position: "Hair & Make-up Designer", firm: "Diamond Horseshoe Theater @ Paramount Hotel", show: "Queen of the night (Off-Broadway", user: jimmy)
 
 khoa = User.create!(email: "khoa@gmail.com", password: "khoa123", admin: true)
