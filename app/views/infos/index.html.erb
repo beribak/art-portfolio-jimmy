@@ -4,14 +4,16 @@
   </div>
 </div> -->
 <!-- https://thumbs.dreamstime.com/b/makeup-artist-banner-beauty-salon-background-business-concept-your-design-makeup-artist-banner-beauty-salon-background-117805998.jpg -->
-<h4><%= link_to "Home", root_path, class: "go-home btn btn-primary" %></h4>
 <div class="container">
-  <div class="row">
-    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-      <h1 class="text-center about-heading my-4">About Jimmy Cortés</h1>
-      <% @infos.each do |info| %>
-      <p class="info-text my-4"><%= info.description %></p>
-      <% end %>
+  <h4><%= link_to "Home", root_path, class: "go-home btn btn-primary" %></h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        <h1 class="text-center about-heading my-4">About Jimmy Cortés</h1>
+        <% @infos.each do |info| %>
+        <p class="info-text my-4"><%= info.description %></p>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
