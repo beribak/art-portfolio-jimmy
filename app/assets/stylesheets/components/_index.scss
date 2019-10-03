@@ -20,3 +20,15 @@
 .form-control {
   margin-bottom: 10%;
 }
+
+@media screen and (max-width: 575px) {
+
+  .go-home {
+  position: static;
+  margin-top: 5%;
+  text: center;
+  // top: 25px;
+  // left: 30px;
+}
+
+}
