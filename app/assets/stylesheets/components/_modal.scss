@@ -63,3 +63,25 @@
   animation-duration: 0.6s;
 }
 
+@media screen and (max-width: 575px) {
+
+  #image-container {
+    margin: auto;
+    width: 90%;
+    height: 96%;
+  }
+
+  #image_description {
+    position: fixed;
+    z-index: 2;
+    width: 90%;
+    bottom: 2%;
+    padding: 6px;
+    // font-size: ;
+    background-color: rgba(0,0,0,1);
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+  }
+
+}
